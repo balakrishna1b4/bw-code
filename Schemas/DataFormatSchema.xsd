@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat/f1e8ff31-f17a-4a6f-ac13-1715a2625680" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ns.tibco.com/bw/palette/dataformat/f1e8ff31-f17a-4a6f-ac13-1715a2625680">
+  <xsd:element name="dbtocsvcall" tibex:source="sr.index.dataFormatResource" type="dataformat:dbtocsvcallType">
+  </xsd:element>
+
+  <xsd:complexType name="dbtocsvcallType">
+  	<xsd:sequence>
+  		<xsd:element ref="dataformat:custID"></xsd:element>
+  		<xsd:element ref="dataformat:custName"></xsd:element>
+  		<xsd:element ref="dataformat:custMailID"></xsd:element>
+  		<xsd:element ref="dataformat:custPhno"></xsd:element>
+  		<xsd:element ref="dataformat:custAddress"></xsd:element>
+  		<xsd:element ref="dataformat:custSalary"></xsd:element>
+  		<xsd:element ref="dataformat:custStatus"></xsd:element>
+  		<xsd:element ref="dataformat:custProof"></xsd:element>
+  		<xsd:element ref="dataformat:custCreatedDateTime"></xsd:element>
+  	</xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="dbtocsvcalldetailType">
+  	<xsd:sequence>
+  		<xsd:element ref="dataformat:dbtocsvcall" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+  	</xsd:sequence>
+  </xsd:complexType>
+  
+    <xsd:element name="dbtocsvcalldetail" type="dataformat:dbtocsvcalldetailType"></xsd:element>
+
+    <xsd:element name="custID" type="xsd:int"></xsd:element>
+
+    <xsd:element name="custName" type="xsd:string"></xsd:element>
+
+    <xsd:element name="custAddress" type="xsd:string"></xsd:element>
+
+    <xsd:element name="custMailID" type="xsd:string"></xsd:element>
+
+    <xsd:element name="custPhno" type="xsd:integer"></xsd:element>
+
+    <xsd:element name="custProof" type="xsd:string"></xsd:element>
+
+    <xsd:element name="custSalary" type="xsd:string"></xsd:element>
+
+    <xsd:element name="custStatus" type="xsd:string"></xsd:element>
+
+    <xsd:element name="custCreatedDateTime" type="xsd:string"></xsd:element>
+
+</xsd:schema>

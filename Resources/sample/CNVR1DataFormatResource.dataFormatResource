@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_4b3f5096-f6b6-43ec-a2ff-7c2fce9de2e1="http://ns.tibco.com/bw/palette/dataformat/4b3f5096-f6b6-43ec-a2ff-7c2fce9de2e1" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_4H8ecJxAEey4fNwBcX_IfA" name="sample.CNVR1DataFormatResource" type="dataformat:DataFormat">
+  <imports xmi:id="_JQtqsJ8JEey_LJbvNkuOUw" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/4b3f5096-f6b6-43ec-a2ff-7c2fce9de2e1"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_4H8ecZxAEey4fNwBcX_IfA" formatType="Delimiter separated" colSeparator="," colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="Carriage Return/Line Feed (windows)" fillCharacter="Space" schemaElementQName="_4b3f5096-f6b6-43ec-a2ff-7c2fce9de2e1:dbtocsvcall" fieldOffsetsStr="custID(0,0)&#xA;custName(0,0)&#xA;custAddress(0,0)&#xA;custMailID(0,0)&#xA;custPhno(0,0)&#xA;custSalary(0,0)&#xA;custStatus(0,0)&#xA;custCreatedDateTime(0,0)&#xA;custProof(0,0)">
+    <fieldOffsets xmi:id="_RLqvEJ8JEey_LJbvNkuOUw" name="custID"/>
+    <fieldOffsets xmi:id="_WJ_DMJ8JEey_LJbvNkuOUw" name="custName"/>
+    <fieldOffsets xmi:id="_YUFjQJ8JEey_LJbvNkuOUw" name="custAddress"/>
+    <fieldOffsets xmi:id="_a7H28J8JEey_LJbvNkuOUw" name="custMailID"/>
+    <fieldOffsets xmi:id="_erl34J8JEey_LJbvNkuOUw" name="custPhno"/>
+    <fieldOffsets xmi:id="_ihGw4J8JEey_LJbvNkuOUw" name="custSalary"/>
+    <fieldOffsets xmi:id="_kbKp0J8JEey_LJbvNkuOUw" name="custStatus"/>
+    <fieldOffsets xmi:id="_njXJ0J8JEey_LJbvNkuOUw" name="custCreatedDateTime"/>
+    <fieldOffsets xmi:id="_xM_9kJ8JEey_LJbvNkuOUw" name="custProof"/>
+  </jndi:configuration>
+</jndi:namedResource>

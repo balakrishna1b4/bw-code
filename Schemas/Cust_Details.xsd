@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Cust_Details" xmlns:tns="http://www.example.org/Cust_Details" elementFormDefault="qualified">
+
+    <complexType name="Customer_Details_Type">
+    	<sequence>
+    		<element ref="tns:Customer" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Customer_Type">
+    	<sequence>
+    		<element ref="tns:CustID"></element>
+    		<element ref="tns:CustName"></element>
+    		<element ref="tns:CustAddress"></element>
+    		<element ref="tns:CustEmail"></element>
+    		<element ref="tns:CustPhoneno"></element>
+    		<element ref="tns:CustSalary"></element>
+    		<element ref="tns:CustStatus"></element>
+    		<element ref="tns:CustProof"></element>
+    		<element ref="tns:CustCreatedDateTime"></element>
+    	</sequence>
+    </complexType>
+    
+
+
+    <element name="CustID" type="int"></element>
+
+    <element name="CustName" type="string"></element>
+
+    <element name="CustAddress" type="string"></element>
+
+    <element name="CustEmail" type="string"></element>
+
+    <element name="CustPhoneno" type="int"></element>
+
+    <element name="CustSalary" type="string"></element>
+
+    <element name="CustStatus" type="string"></element>
+
+    <element name="CustCreatedDateTime" type="string"></element>
+
+    <element name="CustProof" type="string"></element>
+
+    <element name="Customer_Details" type="tns:Customer_Details_Type"></element>
+
+    <element name="Customer" type="tns:Customer_Type"></element>
+</schema>
